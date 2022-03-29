@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project2021">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MyHealth"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ophtamologists" android:parentActivityName=".doctors"></activity>
+        <activity android:name=".psychiatrists" android:parentActivityName=".doctors" />
+        <activity android:name=".dentists" android:parentActivityName=".doctors"/>
+        <activity android:name=".cardiologists" android:parentActivityName=".doctors"/>
+        <activity android:name=".MakeAppointment" />
+        <activity android:name=".doctors" android:parentActivityName=".HomeScreen"/>
+        <activity android:name=".categories" android:parentActivityName=".Login"/>
+        <activity android:name=".HomeScreen" android:parentActivityName=".Login" />
+        <activity android:name=".Login" android:parentActivityName=".MainActivity" />
+        <activity android:name=".Register" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
